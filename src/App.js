@@ -6,15 +6,19 @@ import Contact from './components/contact';
 import Footer from './components/footer';
 import Portfolio from './components/portfolio';
 import {BrowserRouter, Routes, Route} from"react-router-dom"
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
       <Header/> 
+      
       <Routes>
+
       <Route path="/" element={<About/>}></Route> 
       <Route path="/Portfolio" element={<Portfolio/>}></Route>
       <Route path="/Contact" element={<Contact/>}></Route>   
+      
       </Routes>  
       <Footer/>
       </BrowserRouter> 
