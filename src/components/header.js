@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import{Heading}from"@chakra-ui/react"
 function Header() {
   return (
     <div>
-      <h1>Hey guys! I'm a Header!</h1>
+      <Heading as = "h1">Hey guys! I'm a Header!</Heading>
      <ul>
     <li><Link to="/">About</Link></li>
     <li><Link to="/Portfolio">Portfolio</Link></li>
