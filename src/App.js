@@ -1,38 +1,34 @@
-import logo from './logo.svg';
+import {BrowserRouter, Routes, Route} from"react-router-dom";
 import './App.css';
+import Navbar from './components/navbar';
 import Footer from './components/footer';
-import Header from './components/header';
+import Header from './pages/header';
 import About from './pages/about';
 import Contact from './pages/contact';
 import Portfolio from './pages/portfolio';
 import Resume from './pages/resume';
-import {BrowserRouter, Routes, Route} from"react-router-dom"
+
 
 function App() {
   return (
-    <div className="App">
-      
       <BrowserRouter>
-      
-      <Header/> 
-      
+      <Navbar/>
+      <Header/>
       <Routes>
 
-      <Route path="/" element={<About/>}></Route>
+      <Route path="/" element={<About/>} />
 
-      <Route path="/Portfolio" element={<Portfolio/>}></Route>
+      <Route path="/portfolio" element={<Portfolio/>}></Route>
       
-      <Route path="/Contact" element={<Contact/>}></Route> 
+      <Route path="/contact" element={<Contact/>}></Route> 
 
-      <Route path="/Resume" element={<Resume/>}></Route>   
+      <Route path="/resume" element={<Resume/>}></Route>    
       
       </Routes>  
       
       <Footer/>
       
       </BrowserRouter> 
-    
-    </div>
   );
 }
 
