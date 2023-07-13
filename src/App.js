@@ -1,27 +1,37 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './components/header';
-import About from './components/about';
-import Contact from './components/contact';
 import Footer from './components/footer';
-import Portfolio from './components/portfolio';
+import Header from './components/header';
+import About from './pages/about';
+import Contact from './pages/contact';
+import Portfolio from './pages/portfolio';
+import Resume from './pages/resume';
 import {BrowserRouter, Routes, Route} from"react-router-dom"
 
 function App() {
   return (
     <div className="App">
+      
       <BrowserRouter>
+      
       <Header/> 
       
       <Routes>
 
-      <Route path="/" element={<About/>}></Route> 
+      <Route path="/" element={<About/>}></Route>
+
       <Route path="/Portfolio" element={<Portfolio/>}></Route>
-      <Route path="/Contact" element={<Contact/>}></Route>   
+      
+      <Route path="/Contact" element={<Contact/>}></Route> 
+
+      <Route path="/Resume" element={<Resume/>}></Route>   
       
       </Routes>  
+      
       <Footer/>
+      
       </BrowserRouter> 
+    
     </div>
   );
 }
@@ -29,7 +39,7 @@ function App() {
 export default App;
 
 
-{/* <header className="App-header">
+/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -42,4 +52,4 @@ export default App;
         >
           Learn React
         </a>
-      </header> */}
+      </header> */
