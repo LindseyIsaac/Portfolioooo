@@ -16,7 +16,7 @@ function App() {
     
       <Routes>
       
-      <Route path="/" element={<Start/>} />
+      <Route path="/start" element={<Start/>} />
 
       <Route path="/about" element={<About/>} />
 
