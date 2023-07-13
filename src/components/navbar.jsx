@@ -40,10 +40,13 @@ const Navbar = () => {
                 display={{ base: "none", md: "inline-flex" }}
               >
             <Button w="full" variant="ghost">
+                   <Link to = "/start">Start</Link>
+                 </Button>
+            <Button w="full" variant="ghost">
                    <Link to = "/about">About Me</Link>
                  </Button>
            <Button w="full" variant="ghost">
-                  <Link to = "/portfolio">portfolio</Link>
+                  <Link to = "/portfolio">Portfolio</Link>
                  </Button>
            <Button w="full" variant="ghost">
                    <Link to = "/contact">Contact</Link>

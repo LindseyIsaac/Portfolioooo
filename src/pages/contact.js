@@ -1,10 +1,10 @@
 import React from "react";
-import{Heading}from"@chakra-ui/react"
+// import{Heading}from"@chakra-ui/react"
 
 function Contact() {
   return (
     <div>
-      <Heading as = "h1">Hey guys! I'm a Contact!</Heading>
+      Hey guys! I'm a Contact!
      Name and stuff
     </div>
   );
