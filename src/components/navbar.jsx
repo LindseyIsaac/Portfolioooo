@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from"react-router-dom";
 import {
   chakra,
   Box,
@@ -50,11 +50,11 @@ export default function Navbar(){
               color="brand.500"
               display={{ base: "none", md: "inline-flex" }}
             >
-              <Button variant="ghost">Start</Button>
-              <Button variant="ghost">About Me</Button>
-              <Button variant="ghost">Portfolio</Button>
-              <Button variant="ghost">Resume</Button>
-              <Button variant="ghost">Contact</Button>
+              <Button variant="ghost"><Link to = "/start">Start</Link></Button>
+              <Button variant="ghost"><Link to = "/about">About Me</Link></Button>
+              <Button variant="ghost"><Link to = "/portfolio">Portfolio</Link></Button>
+              <Button variant="ghost"><Link to = "/resume">Resume</Link></Button>
+              <Button variant="ghost"><Link to = "/contact">Contact</Link></Button>
             </HStack>
             <Button colorScheme="brand" size="sm">
               Get Started

@@ -105,6 +105,3 @@ export default function Start(){
     </Flex>
   );
 };
-
-
-

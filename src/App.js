@@ -12,7 +12,8 @@ import Start from './pages/start'
 function App() {
   return (
       <BrowserRouter>
-      <Navbar/>
+
+     <Navbar/>
     
       <Routes>
       
@@ -29,7 +30,7 @@ function App() {
       </Routes>  
       
       <Footer/>
-      
+       
       </BrowserRouter> 
   );
 }
