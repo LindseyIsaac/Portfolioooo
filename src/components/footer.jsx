@@ -1,17 +1,3 @@
-// import React from "react";
-// import{Heading}from"@chakra-ui/react"
-
-// function Footer() {
-//   return (
-//     <div>
-//       <Heading as = "h1">Hello! Welcome to my interactive Portfolio!</Heading>
-     
-//     </div>
-//   );
-// }
-
-// export default Footer;
-
 import React from "react";
 import { chakra, Flex, Icon } from "@chakra-ui/react";
 

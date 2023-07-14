@@ -1,21 +1,10 @@
-// import React from "react";
-// // import { Link } from "react-router-dom";
-
-// function Start() {
-//   return (
-//     <div>
-//       Hey guys! I'm the start spot!!
-//     </div>
-//   );
-// }
-
-// export default Start;
-
 import React from "react";
-import { Box, Flex, HStack, Image, Text } from "@chakra-ui/react";
-import { FaEnvelope, FaMapPin, FaSuitcase } from "react-icons/fa";
+import { Box, Flex, Icon, Image, chakra } from "@chakra-ui/react";
 
-export default function Start(){
+import { MdEmail, MdHeadset, MdLocationOn } from "react-icons/md";
+import { BsFillBriefcaseFill } from "react-icons/bs";
+
+export default function Contact(){
   return (
     <Flex
       bg="#edf3f8"
@@ -25,83 +14,86 @@ export default function Start(){
       alignItems="center"
       justifyContent="center"
     >
-      <Flex
+      <Box
+        w="sm"
+        mx="auto"
+        bg="white"
+        _dark={{ bg: "gray.800" }}
         shadow="lg"
         rounded="lg"
-        bg="#edf3f8"
-        _dark={{ bg: "gray.800" }}
-        mb={8}
-        direction="column"
-        alignItems="center"
-        justifyContent="center"
+        overflow="hidden"
       >
-        <Box
-          bg="#edf3f8"
-          _dark={{ bg: "#3e3e3e" }}
-          style={{
-            backgroundImage:
-              "url(https://images.unsplash.com/photo-1666795599746-0f62dfa29a07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80)",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
-          height="100%"
-          width="100%"
-          borderRadius="lg"
-          p={8}
-          display="flex"
-          alignItems="left"
-        >
-          <Image
-            src="https://images.unsplash.com/photo-1623930154261-37f8b293c059?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
-            alt="Profile Picture"
-            borderRadius="full"
-            boxSize="150px"
-            shadow="lg"
-            border="5px solid"
-            mb={-20}
-            borderColor="gray.800"
-            _dark={{ borderColor: "gray.200" }}
-          />
-        </Box>
-        <Box
-          gridColumn="span 8"
-          p={8}
-          width="full"
-          height="full"
-          borderRadius="lg"
-          textAlign="left"
-          mt={10}
-        >
-          <Text
-            fontSize="4xl"
+        <Image
+          w="full"
+          h={56}
+          fit="cover"
+          objectPosition="center"
+          src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+          alt="avatar"
+        />
+
+        <Flex alignItems="center" px={6} py={3} bg="gray.900">
+          <Icon as={MdHeadset} h={6} w={6} color="white" />
+
+          <chakra.h1 mx={3} color="white" fontWeight="bold" fontSize="lg">
+            ZEN
+          </chakra.h1>
+        </Flex>
+
+        <Box py={4} px={6}>
+          <chakra.h1
+            fontSize="xl"
             fontWeight="bold"
             color="gray.800"
             _dark={{ color: "white" }}
           >
-            Christian Buehner
-          </Text>
-          <HStack spacing={3} color="gray.800" _dark={{ color: "gray.200" }}>
-            <FaSuitcase size={24} />
-            <Text
-              fontSize="2xl"
-              fontWeight="bold"
-              color="gray.800"
-              _dark={{ color: "gray.200" }}
-            >
-              Photographer
-            </Text>
-          </HStack>
-          <HStack spacing={3} color="gray.700" _dark={{ color: "gray.200" }}>
-            <FaMapPin size={20} />
-            <Text fontSize="lg">Germany</Text>
-          </HStack>
-          <HStack spacing={3} color="gray.700" _dark={{ color: "gray.200" }}>
-            <FaEnvelope size={20} />
-            <Text fontSize="lg">chris@buehner.com</Text>
-          </HStack>
+            Patterson johnson
+          </chakra.h1>
+
+          <chakra.p py={2} color="gray.700" _dark={{ color: "gray.400" }}>
+            Full Stack maker & UI / UX Designer , love hip hop music Author of
+            Building UI.
+          </chakra.p>
+
+          <Flex
+            alignItems="center"
+            mt={4}
+            color="gray.700"
+            _dark={{ color: "gray.200" }}
+          >
+            <Icon as={BsFillBriefcaseFill} h={6} w={6} mr={2} />
+
+            <chakra.h1 px={2} fontSize="sm">
+              Junior Developer
+            </chakra.h1>
+          </Flex>
+
+          <Flex
+            alignItems="center"
+            mt={4}
+            color="gray.700"
+            _dark={{ color: "gray.200" }}
+          >
+            <Icon as={MdLocationOn} h={6} w={6} mr={2} />
+
+            <chakra.h1 px={2} fontSize="sm">
+              Cedar Park, Texas
+            </chakra.h1>
+          </Flex>
+          <Flex
+            alignItems="center"
+            mt={4}
+            color="gray.700"
+            _dark={{ color: "gray.200" }}
+          >
+            <Icon as={MdEmail} h={6} w={6} mr={2} />
+
+            <chakra.h1 px={2} fontSize="sm">
+              isaaclindsey89@gmail.com
+            </chakra.h1>
+          </Flex>
         </Box>
-      </Flex>
+      </Box>
     </Flex>
   );
 };

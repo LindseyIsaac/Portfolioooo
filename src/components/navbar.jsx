@@ -16,7 +16,6 @@ import {
 } from "@chakra-ui/react";
 import { AiOutlineMenu } from "react-icons/ai";
 
-
 export default function Navbar(){
   const bg = useColorModeValue("white", "gray.800");
   const mobileNav = useDisclosure();
