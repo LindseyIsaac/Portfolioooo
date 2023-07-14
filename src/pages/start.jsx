@@ -1,13 +1,13 @@
 import React from "react";
 import { Box, Flex, Icon, Image, chakra } from "@chakra-ui/react";
-
-import { MdEmail, MdHeadset, MdLocationOn } from "react-icons/md";
+import images  from "../assets/images/goofy.jpg"
+import { MdEmail, MdLocationOn, MdStar } from "react-icons/md";
 import { BsFillBriefcaseFill } from "react-icons/bs";
 
 export default function Contact(){
   return (
     <Flex
-      bg="#edf3f8"
+      bg="#A267AC"
       _dark={{ bg: "#3e3e3e" }}
       p={50}
       w="full"
@@ -15,27 +15,30 @@ export default function Contact(){
       justifyContent="center"
     >
       <Box
-        w="sm"
+        w="xl"
         mx="auto"
         bg="white"
         _dark={{ bg: "gray.800" }}
-        shadow="lg"
-        rounded="lg"
+        shadow="xl"
+        rounded="xl"
         overflow="hidden"
       >
         <Image
+        // makes it smaller or larger to the container but it will fit
           w="full"
-          h={56}
+          // larger numbers make it smaller
+          h= { 56 }
+          boxSize ='600px'
           fit="cover"
           objectPosition="center"
-          src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
-          alt="avatar"
+          src= { images }
+          alt="Picofme"
         />
 
         <Flex alignItems="center" px={6} py={3} bg="gray.900">
-          <Icon as={MdHeadset} h={6} w={6} color="white" />
+          <Icon as={MdStar} h={6} w={6} color="orange" />
 
-          <chakra.h1 mx={3} color="white" fontWeight="bold" fontSize="lg">
+          <chakra.h1 mx={3} color="pink" fontWeight="bold" fontSize="xl">
             ZEN
           </chakra.h1>
         </Flex>
@@ -47,18 +50,17 @@ export default function Contact(){
             color="gray.800"
             _dark={{ color: "white" }}
           >
-            Patterson johnson
+            Lindsey Isaac
           </chakra.h1>
 
           <chakra.p py={2} color="gray.700" _dark={{ color: "gray.400" }}>
-            Full Stack maker & UI / UX Designer , love hip hop music Author of
-            Building UI.
+            Full Stack Web Developer,
           </chakra.p>
 
           <Flex
             alignItems="center"
             mt={4}
-            color="gray.700"
+            color="pink.700"
             _dark={{ color: "gray.200" }}
           >
             <Icon as={BsFillBriefcaseFill} h={6} w={6} mr={2} />
