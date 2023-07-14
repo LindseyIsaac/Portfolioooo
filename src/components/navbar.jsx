@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from"react-router-dom";
+
 import {
   chakra,
   Box,
@@ -39,7 +40,7 @@ export default function Navbar(){
             >
               <VisuallyHidden>Choc</VisuallyHidden>
             </chakra.a>
-            <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
+            <chakra.h1 fontSize="4xl" fontWeight="medium" ml="2">
               Lindsey Isaac
             </chakra.h1>
           </Flex>
