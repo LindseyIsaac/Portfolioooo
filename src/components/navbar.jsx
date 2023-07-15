@@ -17,7 +17,7 @@ import {
 import { AiOutlineMenu } from "react-icons/ai";
 
 export default function Navbar(){
-  const bg = useColorModeValue("white", "gray.800");
+  const bg = useColorModeValue("#D2DAFF", "gray.800");
   const mobileNav = useDisclosure();
 
   return (
@@ -56,9 +56,7 @@ export default function Navbar(){
               <Button variant="ghost"><Link to = "/resume">Resume</Link></Button>
               <Button variant="ghost"><Link to = "/contact">Contact</Link></Button>
             </HStack>
-            <Button colorScheme="brand" size="sm">
-              Get Started
-            </Button>
+
             <Box display={{ base: "inline-flex", md: "none" }}>
               <IconButton
                 display={{ base: "flex", md: "none" }}
