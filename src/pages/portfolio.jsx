@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Box, Flex, HStack, Image, Stack, Text } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 export default function Portfolio(){
   const arrowStyles = {
@@ -23,33 +24,38 @@ export default function Portfolio(){
 
   const slides = [
     {
-      img: "https://images.pexels.com/photos/2599537/pexels-photo-2599537.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      label: "First Slide",
-      description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+      img: "https://github.com/MatthewMontiel/daja-limavi/raw/main/assets/images/DaJa-LiMaVi_inaction_screenshot.png",
+      label: "Project 1",
+      description: <Link to="https://github.com/MatthewMontiel/daja-limavi" target_blank> {""} https://github.com/MatthewMontiel/daja-limavi </Link>,
     },
     {
-      img: "https://images.pexels.com/photos/2714581/pexels-photo-2714581.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      label: "Second Slide",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      img: "https://github.com/MatthewMontiel/ontheshelf/raw/main/Images/preview.png",
+      label: "Project 2",
+      description: <Link to="https://github.com/MatthewMontiel/ontheshelf" target_blank> {""} https://github.com/MatthewMontiel/ontheshelf </Link>
     },
     {
       img: "https://images.pexels.com/photos/2878019/pexels-photo-2878019.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
-      label: "Third Slide",
+      label: "Project 3",
       description:
         "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
     },
     {
-      img: "https://images.pexels.com/photos/1142950/pexels-photo-1142950.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      label: "Fourth Slide",
-      description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+      img: "https://github.com/LindseyIsaac/JavaQuiz/raw/main/assets/images/javashot.PNG",
+      label: "Java Script Quiz",
+      description: <Link to="https://github.com/LindseyIsaac/JavaQuiz" target_blank> {""} https://github.com/LindseyIsaac/JavaQuiz </Link>
     },
     {
-      img: "https://images.pexels.com/photos/3124111/pexels-photo-3124111.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      label: "Fifth Slide",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      img: "https://github.com/LindseyIsaac/Weather6/raw/main/assets/images/weathers.png",
+      label: "Weather API Application",
+      description: <Link to="https://github.com/LindseyIsaac/Weather6" target_blank> {""} https://github.com/LindseyIsaac/Weather6 </Link>
+    },
+    {
+      img: "https://github.com/LindseyIsaac/Portfolio/raw/main/Assets/images/port.png", 
+      label: "Sixth Slide",
+      description: <Link to = "https://github.com/LindseyIsaac/Portfolio" target_blank> {""} "https://github.com/LindseyIsaac/Portfolio" </Link>
     },
   ];
-
+/* <Link to= target_blank> {""} </Link> */
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slidesCount = slides.length;
@@ -71,7 +77,7 @@ export default function Portfolio(){
   return (
     <Flex
       w="full"
-      bg="#edf3f8"
+      bg="#D9ACF5"
       _dark={{ bg: "#3e3e3e" }}
       p={10}
       alignItems="center"
@@ -99,14 +105,19 @@ export default function Portfolio(){
               <Stack
                 p="8px 12px"
                 pos="absolute"
-                bottom="24px"
-                textAlign="center"
+                bottom="1px"
+                textAlign="left"
                 w="full"
                 mb="8"
-                color="white"
-              >
-                <Text fontSize="2xl">{slide.label}</Text>
-                <Text fontSize="lg">{slide.description}</Text>
+                // changes slides text color 
+                color="#"
+                fontWeight="bold"
+                textShadowColor= "black"
+                >
+                <Text fontSize="2xl">{slide.label} </Text>
+                
+                <Text fontSize="2xl">{slide.description}</Text>
+                
               </Stack>
             </Box>
           ))}
