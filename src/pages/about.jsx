@@ -13,6 +13,7 @@ import {
 export default function About(){
   const Feature = (props) => {
     return (
+      <>
       <Flex>
         <Flex shrink={0}>
           <Icon
@@ -45,6 +46,7 @@ export default function About(){
           </chakra.dd>
         </Box>
       </Flex>
+      </>
     );
   };
   return (
