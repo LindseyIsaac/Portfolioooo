@@ -7,9 +7,10 @@ export default function App(){
       w="full"
       bg="#AAC4FF"
       _dark={{ bg: "#3e3e3e" }}
-      p={50}
+      p= "0.25rem"
       alignItems="center"
       justifyContent="center"
+      z-index= "-1"
     >
       <Flex
         w="full"
