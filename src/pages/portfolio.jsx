@@ -21,7 +21,7 @@ export default function Portfolio(){
       bg: "black",
     },
    };
-
+// got rid of as const
   const slides = [
     {
       img: "https://github.com/MatthewMontiel/daja-limavi/raw/main/assets/images/DaJa-LiMaVi_inaction_screenshot.png",
@@ -66,6 +66,7 @@ export default function Portfolio(){
   const nextSlide = () => {
     setCurrentSlide((s) => (s === slidesCount - 1 ? 0 : s + 1));
   };
+  //:number go byebye
   const setSlide = (slide) => {
     setCurrentSlide(slide);
   };
