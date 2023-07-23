@@ -51,7 +51,6 @@ export default function Navbar(){
               display={{ base: "none", md: "inline-flex" }}
             >
               <Button variant="ghost"><Link to = "/">About Me</Link></Button>
-              <Button variant="ghost"><Link to = "/start">Start</Link></Button>
               <Button variant="ghost"><Link to = "/portfolio">Portfolio</Link></Button>
               <Button variant="ghost"><Link to = "/resume">Resume</Link></Button>
               <Button variant="ghost"><Link to = "/contact">Contact</Link></Button>
@@ -89,9 +88,6 @@ export default function Navbar(){
                   onClick={mobileNav.onClose}
                 />
 
-                <Button w="full" variant="ghost">
-                  Start
-                </Button>
                 <Button w="full" variant="ghost">
                   About Me
                 </Button>

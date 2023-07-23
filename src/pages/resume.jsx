@@ -1,5 +1,5 @@
 import React from "react";
-import { chakra, Box, SimpleGrid, Flex, Icon } from "@chakra-ui/react";
+import { chakra, Box, Link, SimpleGrid, Flex, Icon } from "@chakra-ui/react";
 const Choc = () => {
   const Feature = (props) => {
     return (
@@ -64,7 +64,7 @@ const Choc = () => {
             letterSpacing="tight"
             _light={{ color: "gray.900" }}
           >
-            Features
+            Resume And Skills Highlights
           </chakra.p>
           <chakra.p
             mt={4}
@@ -74,8 +74,7 @@ const Choc = () => {
             color="gray.500"
             _dark={{ color: "gray.400" }}
           >
-            Get insights to dig down into what&apos;s powering your growth the
-            most.
+           Here you can download my resume and see the coding skills that I feel most proud of!
           </chakra.p>
         </Box>
         <SimpleGrid
@@ -85,38 +84,8 @@ const Choc = () => {
           mt={6}
         >
           <Feature
-            color="red"
-            title="Personal Emails"
-            icon={
-              <path
-                fillRule="evenodd"
-                d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z"
-                clipRule="evenodd"
-              />
-            }
-          >
-            Hand crafted dashboards for everything from Recurring Revenue to
-            Customer Churn.
-          </Feature>
-
-          <Feature
-            color="pink"
-            title="Why a beaker icon?"
-            icon={
-              <path
-                fillRule="evenodd"
-                d="M7 2a1 1 0 00-.707 1.707L7 4.414v3.758a1 1 0 01-.293.707l-4 4C.817 14.769 2.156 18 4.828 18h10.343c2.673 0 4.012-3.231 2.122-5.121l-4-4A1 1 0 0113 8.172V4.414l.707-.707A1 1 0 0013 2H7zm2 6.172V4h2v4.172a3 3 0 00.879 2.12l1.027 1.028a4 4 0 00-2.171.102l-.47.156a4 4 0 01-2.53 0l-.563-.187a1.993 1.993 0 00-.114-.035l1.063-1.063A3 3 0 009 8.172z"
-                clipRule="evenodd"
-              />
-            }
-          >
-            Your central hub that helps you see, and react to, absolutely
-            everything that’s happening.
-          </Feature>
-
-          <Feature
-            color="yellow"
-            title="Clickable"
+            color="purple"
+            title="Clickable Resume"
             icon={
               <path
                 fillRule="evenodd"
@@ -125,39 +94,29 @@ const Choc = () => {
               />
             }
           >
-            Stay informed with daily, weekly, or monthly reports on all your
-            insights data.
+            This is the link to download my resume. <Link href="https://docs.google.com/document/d/1Yq6-b5GRz1-68ZNkCVPAvAab1s-9bBNPjYbQIdj9Qhk/edit" isExternal>
+  Resume here!
+</Link>
           </Feature>
 
           <Feature
             color="green"
-            title="Finger Printing"
+            title="React"
             icon={
-              <>
-                <path
-                  fillRule="evenodd"
-                  d="M6.625 2.655A9 9 0 0119 11a1 1 0 11-2 0 7 7 0 00-9.625-6.492 1 1 0 11-.75-1.853zM4.662 4.959A1 1 0 014.75 6.37 6.97 6.97 0 003 11a1 1 0 11-2 0 8.97 8.97 0 012.25-5.953 1 1 0 011.412-.088z"
-                  clipRule="evenodd"
-                />
-                <path
-                  fillRule="evenodd"
-                  d="M5 11a5 5 0 1110 0 1 1 0 11-2 0 3 3 0 10-6 0c0 1.677-.345 3.276-.968 4.729a1 1 0 11-1.838-.789A9.964 9.964 0 005 11zm8.921 2.012a1 1 0 01.831 1.145 19.86 19.86 0 01-.545 2.436 1 1 0 11-1.92-.558c.207-.713.371-1.445.49-2.192a1 1 0 011.144-.83z"
-                  clipRule="evenodd"
-                />
-                <path
-                  fillRule="evenodd"
-                  d="M10 10a1 1 0 011 1c0 2.236-.46 4.368-1.29 6.304a1 1 0 01-1.838-.789A13.952 13.952 0 009 11a1 1 0 011-1z"
-                  clipRule="evenodd"
-                />
-              </>
+              <path
+                fillRule="evenodd"
+                d="M7 2a1 1 0 00-.707 1.707L7 4.414v3.758a1 1 0 01-.293.707l-4 4C.817 14.769 2.156 18 4.828 18h10.343c2.673 0 4.012-3.231 2.122-5.121l-4-4A1 1 0 0113 8.172V4.414l.707-.707A1 1 0 0013 2H7zm2 6.172V4h2v4.172a3 3 0 00.879 2.12l1.027 1.028a4 4 0 00-2.171.102l-.47.156a4 4 0 01-2.53 0l-.563-.187a1.993 1.993 0 00-.114-.035l1.063-1.063A3 3 0 009 8.172z"
+                clipRule="evenodd"
+              />
             }
           >
-            Our forecasting is your magical crystal ball that helps you predict
-            and plan for the future.
+            {/* Your central hub that helps you see, and react to, absolutely
+            everything that’s happening. */}
           </Feature>
+
           <Feature
-            color="purple"
-            title="Performance on Fire"
+            color="orange"
+            title="Chakra-UI"
             icon={
               <path
                 fillRule="evenodd"
@@ -166,12 +125,13 @@ const Choc = () => {
               />
             }
           >
-            How does your company compare? Learn how your company stacks up in
-            the industry.
+            {/* How does your company compare? Learn how your company stacks up in
+            the industry. */}
           </Feature>
+
           <Feature
-            color="blue"
-            title="Love is in the Air"
+            color="red"
+            title="MERN-Stack"
             icon={
               <path
                 fillRule="evenodd"
@@ -180,12 +140,13 @@ const Choc = () => {
               />
             }
           >
-            Organize your customers to bring meaningful and comparative insights
-            across your dashboards.
+            {/* Organize your customers to bring meaningful and comparative insights
+            across your dashboards. */}
           </Feature>
+
           <Feature
-            color="brand"
-            title="Thunder and Lightning"
+            color="teal"
+            title="Node.js"
             icon={
               <path
                 fillRule="evenodd"
@@ -194,33 +155,13 @@ const Choc = () => {
               />
             }
           >
-            Improve your conversion rates by monitoring exactly what’s going on
-            while your customers are in trial.
-          </Feature>
-
-          <Feature
-            color="purple"
-            title="Puzzles"
-            icon={
-              <>
-                <path
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z" />
-                </path>
-              </>
-            }
-          >
-            Personalized segmentation, rich customer profiles, manual
-            subscriptions, and more!
+            {/* Improve your conversion rates by monitoring exactly what’s going on
+            while your customers are in trial. */}
           </Feature>
 
           <Feature
             color="pink"
-            title="Sparkles"
+            title="RND"
             icon={
               <path
                 fillRule="evenodd"
@@ -229,38 +170,24 @@ const Choc = () => {
               />
             }
           >
-            Merge external data with your metrics for deeper insights in to your
-            customers and your business.
+            {/* Merge external data with your metrics for deeper insights in to your
+            customers and your business. */}
           </Feature>
 
           <Feature
-            color="red"
-            title="Stars"
+            color="yellow"
+            title="Javascript.js"
             icon={
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             }
           >
-            Want your metrics in other services? Extend and integrate to our
-            every part of your business.
-          </Feature>
-
-          <Feature
-            color="green"
-            title="Support"
-            icon={
-              <path
-                fillRule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-2 0c0 .993-.241 1.929-.668 2.754l-1.524-1.525a3.997 3.997 0 00.078-2.183l1.562-1.562C15.802 8.249 16 9.1 16 10zm-5.165 3.913l1.58 1.58A5.98 5.98 0 0110 16a5.976 5.976 0 01-2.516-.552l1.562-1.562a4.006 4.006 0 001.789.027zm-4.677-2.796a4.002 4.002 0 01-.041-2.08l-.08.08-1.53-1.533A5.98 5.98 0 004 10c0 .954.223 1.856.619 2.657l1.54-1.54zm1.088-6.45A5.974 5.974 0 0110 4c.954 0 1.856.223 2.657.619l-1.54 1.54a4.002 4.002 0 00-2.346.033L7.246 4.668zM12 10a2 2 0 11-4 0 2 2 0 014 0z"
-                clipRule="evenodd"
-              />
-            }
-          >
-            Send important updates from here to your team’s Support channels.
+            {/* Want your metrics in other services? Extend and integrate to our
+            every part of your business. */}
           </Feature>
 
           <Feature
             color="blue"
-            title="Finger Printing for Robots"
+            title="README Enthusiast"
             icon={
               <>
                 <path
@@ -272,9 +199,10 @@ const Choc = () => {
               </>
             }
           >
-            Goals, Breakouts, Instant notifications, Comparisons, Annotations
-            and Cohort Analysis!
+            {/* Goals, Breakouts, Instant notifications, Comparisons, Annotations
+            and Cohort Analysis! */}
           </Feature>
+
         </SimpleGrid>
       </Box>
     </Flex>

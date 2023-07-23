@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Flex, Icon, Image, chakra } from "@chakra-ui/react";
-import images  from "../assets/images/goofy.jpg";
+import images  from "../assets/images/mee.jpg";
 import { MdEmail, MdLocationOn, MdStar } from "react-icons/md";
 import { BsFillBriefcaseFill } from "react-icons/bs";
 import About from "./about";
@@ -101,3 +101,6 @@ export default function Contact(){
 
   );
 };
+
+
+

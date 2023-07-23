@@ -6,7 +6,7 @@ import About from './pages/about';
 import Contact from './pages/contact';
 import Portfolio from './pages/portfolio';
 import Resume from './pages/resume';
-import Start from './pages/start'
+import Aboutme from './pages/aboutme'
 
 
 function App() {
@@ -16,9 +16,9 @@ function App() {
      <Navbar/>
     
       <Routes>
-      <Route path="/" element={<About/>} />
+      <Route path="/" element={<Aboutme/>} />
 
-      <Route path="/start" element={<Start/>} />
+      <Route path="/about" element={<About/>} />
 
       <Route path="/portfolio" element={<Portfolio/>}></Route>
       

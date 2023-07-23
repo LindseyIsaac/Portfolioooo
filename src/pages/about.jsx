@@ -59,7 +59,7 @@ export default function About(){
       alignItems="center"
     >
       <Box
-        shadow="xl"
+        shadow="sm"
         bg="white"
         _dark={{ bg: "gray.800" }}
         px={8}
@@ -79,7 +79,7 @@ export default function About(){
               textTransform="uppercase"
               letterSpacing="wide"
             >
-              Everything you need
+              Hello!
             </chakra.h2>
             <chakra.h2
               mb={3}
@@ -90,7 +90,7 @@ export default function About(){
               lineHeight="shorter"
               letterSpacing="tight"
             >
-              All-in-one platform
+              A little about me:
             </chakra.h2>
             <chakra.p
               mb={6}
@@ -99,8 +99,7 @@ export default function About(){
               color="gray.600"
               _dark={{ color: "gray.500" }}
             >
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
-              magnam voluptatum cupiditate veritatis in accusamus quisquam.
+              My favorite ice breaker is that I didn't land in my first plane. 
             </chakra.p>
           </Box>
           <GridItem colSpan={2}>
@@ -128,16 +127,6 @@ export default function About(){
                 {" "}
                 Add in-person payments to your platform or marketplace. Using
                 Terminal with Connect.{" "}
-              </Feature>
-              <Feature title="Clear overview for efficient tracking">
-                {" "}
-                Handle your subscriptions and transactions efficiently with the
-                clear overview in Dashboard. Fea
-              </Feature>
-              <Feature title="Decide how you integrate Payments">
-                {" "}
-                Love to code? Decide how you integrate Payments and build
-                advanced and reliable products yourself from scratch.{" "}
               </Feature>
             </Stack>
           </GridItem>
