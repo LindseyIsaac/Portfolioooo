@@ -48,20 +48,14 @@ export default function Contact(){
             fontSize="xl"
             fontWeight="bold"
             color="gray.800"
-            _dark={{ color: "white" }}
+           
           >
             Lindsey Isaac
           </chakra.h1>
-
-          <chakra.p py={2} color="gray.700" _dark={{ color: "gray.400" }}>
-            Full Stack Web Developer,
-          </chakra.p>
-
           <Flex
             alignItems="center"
             mt={4}
             color="pink.700"
-            _dark={{ color: "gray.200" }}
           >
             <Icon as={BsFillBriefcaseFill} h={6} w={6} mr={2} />
 

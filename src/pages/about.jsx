@@ -110,23 +110,17 @@ export default function About(){
               gridColumnGap={{ md: 8 }}
               gridRowGap={{ md: 10 }}
             >
-              <Feature title="Invite team members">
-                Improve your conversion rates by monitoring exactly what’s going
-                on while your customers are in trial.{" "}
+              <Feature title="Halloween">
+                I enjoy being creative and it made CSS styling fun! {" "}
               </Feature>
-              <Feature title="Unify your payments stack">
-                Manage all your online and offline sales in one place with a
-                single integration, simplifying reporting and reconciliation.
+              <Feature title="Music">
+              Listening to music not only helps me stay focused but makes life exciting.{" "}
               </Feature>
-              <Feature title="Own your in-store experience">
-                {" "}
-                Provide a seamless customer experience across channels, like
-                reserving online and picking up in store.
+              <Feature title="Full Stack JavaScript Bootcamp">
+                This bootcamp has taught me how to learn and how to overcome small hills to make something to be proud of.{" "}
               </Feature>
-              <Feature title="Grow your platform’s revenue">
-                {" "}
-                Add in-person payments to your platform or marketplace. Using
-                Terminal with Connect.{" "}
+              <Feature title="Cooking">
+                Once you start to make something it always feels so satisfying seeing the end results and feels just like taking the first bite.{" "}
               </Feature>
             </Stack>
           </GridItem>

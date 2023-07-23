@@ -2,10 +2,12 @@ import { useState } from 'react';
 import {
   Box,
   Button,
+  Flex,
   FormControl,
   FormErrorMessage,
   FormLabel,
   Input,
+  Text,
   Textarea,
 } from '@chakra-ui/react';
 
@@ -40,7 +42,19 @@ const ContactForm = () => {
   };
 
   return (
+    <Flex
+      bg="black"
+      p={50}
+      w="full"
+      alignItems="center"
+      justifyContent="center"
+      >
+
     <Box maxWidth="400px" mx="auto">
+    <Text
+      color="#C689C6"
+      fontSize="xs"
+    >
       <form onSubmit={handleSubmit}>
         <FormControl mb={4} isInvalid={emailError}>
           <FormLabel>Name</FormLabel>
@@ -79,7 +93,10 @@ const ContactForm = () => {
           Submit
         </Button>
       </form>
+      </Text>
     </Box>
+    
+    </Flex>
   );
 };
 

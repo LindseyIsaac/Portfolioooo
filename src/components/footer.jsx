@@ -53,7 +53,7 @@ export default function App(){
 
         <Flex mx="-2">
           <chakra.a
-            href="#"
+            href="https://www.linkedin.com/in/lindsey-isaac-672646273/"
             mx="2"
             color="gray.600"
             _dark={{ color: "gray.300", _hover: { color: "gray.400" } }}
@@ -68,7 +68,7 @@ export default function App(){
           </chakra.a>
 
           <chakra.a
-            href="#"
+            href="https://github.com/LindseyIsaac"
             mx="2"
             color="gray.600"
             _dark={{ color: "gray.300", _hover: { color: "gray.400" } }}

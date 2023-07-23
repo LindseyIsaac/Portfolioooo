@@ -25,34 +25,33 @@ export default function Portfolio(){
   const slides = [
     {
       img: "https://github.com/MatthewMontiel/daja-limavi/raw/main/assets/images/DaJa-LiMaVi_inaction_screenshot.png",
-      label: "Project 1",
-      description: <Link to="https://github.com/MatthewMontiel/daja-limavi" target_blank> {""} https://github.com/MatthewMontiel/daja-limavi </Link>,
+      label: <Link to="https://matthewmontiel.github.io/daja-limavi/" target_blank> {""} Deployed Application </Link>,
+      description: <Link to="https://github.com/MatthewMontiel/daja-limavi" target_blank> {""} GitHub </Link>, 
     },
     {
       img: "https://github.com/MatthewMontiel/ontheshelf/raw/main/Images/preview.png",
-      label: "Project 2",
-      description: <Link to="https://github.com/MatthewMontiel/ontheshelf" target_blank> {""} https://github.com/MatthewMontiel/ontheshelf </Link>
+      label: <Link to="https://ontheshelf.herokuapp.com/" target_blank> {""} Deployed Application</Link>,
+      description: <Link to="https://github.com/MatthewMontiel/ontheshelf" target_blank> {""} GitHub </Link>
     },
     {
-      img: "https://images.pexels.com/photos/2878019/pexels-photo-2878019.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+      img: "https://w0.peakpx.com/wallpaper/775/909/HD-wallpaper-joker-ha-ha-ha-ha-ha-ha-hahaha-ja-ja-ja-joker-ha-ha-ha.jpg",
       label: "Project 3",
-      description:
-        "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+      description: <Link to="https://github.com/vrich88/cautious-journey" target_blank> {""} GitHub </Link>
     },
     {
       img: "https://github.com/LindseyIsaac/JavaQuiz/raw/main/assets/images/javashot.PNG",
-      label: "Java Script Quiz",
-      description: <Link to="https://github.com/LindseyIsaac/JavaQuiz" target_blank> {""} https://github.com/LindseyIsaac/JavaQuiz </Link>
+      label: <Link to="https://lindseyisaac.github.io/JavaQuiz/" target_blank> {""} Deployed Application </Link>,
+      description: <Link to="https://github.com/LindseyIsaac/JavaQuiz" target_blank> {""} GitHub </Link>
     },
     {
       img: "https://github.com/LindseyIsaac/Weather6/raw/main/assets/images/weathers.png",
-      label: "Weather API Application",
-      description: <Link to="https://github.com/LindseyIsaac/Weather6" target_blank> {""} https://github.com/LindseyIsaac/Weather6 </Link>
+      label: <Link to="https://lindseyisaac.github.io/Weather6/" target_blank> {""} Deployed Application </Link>,
+      description: <Link to="https://github.com/LindseyIsaac/Weather6" target_blank> {""} GitHub </Link>
     },
     {
       img: "https://github.com/LindseyIsaac/Portfolio/raw/main/Assets/images/port.png", 
-      label: "Sixth Slide",
-      description: <Link to = "https://github.com/LindseyIsaac/Portfolio" target_blank> {""} "https://github.com/LindseyIsaac/Portfolio" </Link>
+      label: <Link to="https://lindseyisaac.github.io/Portfolio/" target_blank> {""} Deployed Application </Link>,
+      description: <Link to = "https://github.com/LindseyIsaac/Portfolio" target_blank> {""} "GitHub" </Link>
     },
   ];
 /* <Link to= target_blank> {""} </Link> */
@@ -111,11 +110,11 @@ export default function Portfolio(){
                 w="full"
                 mb="8"
                 // changes slides text color 
-                color="#"
+                color="white"
                 fontWeight="bold"
-                textShadowColor= "black"
+                textShadowColor= "Yellow"
                 >
-                <Text fontSize="2xl">{slide.label} </Text>
+                <Text fontSize="4xl">{slide.label} </Text>
                 
                 <Text fontSize="2xl">{slide.description}</Text>
                 
