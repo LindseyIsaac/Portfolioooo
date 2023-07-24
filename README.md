@@ -18,8 +18,9 @@ There is no needed installation, however there is a downloadable link for my res
 
 ## DeployedLink
 
+https://lindseyisaac.github.io/
 
-![screenshot](./src/assets/images/Portfolios.PNG)
+![screenshot](./src/assets/images/shotpage.PNG)
 
 ## Contact
 
