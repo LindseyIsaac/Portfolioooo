@@ -31,5 +31,7 @@ E-mail: isaaclindsey89@gmail.com<br>
 ***Choc-UI*** Prebuilt Chakra UI Components for faster development<br> 
 
 ## License
+MIT License
 
+Copyright (c) 2023 Lindsey
 

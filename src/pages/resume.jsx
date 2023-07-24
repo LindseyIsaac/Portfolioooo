@@ -1,6 +1,6 @@
 import React from "react";
 import { chakra, Box, Link, SimpleGrid, Flex, Icon } from "@chakra-ui/react";
-const Choc = () => {
+export default function Resume(){
   const Feature = (props) => {
     return (
       <Box>
@@ -208,4 +208,3 @@ const Choc = () => {
     </Flex>
   );
 };
-export default Choc;
